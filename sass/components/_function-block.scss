@@ -1,0 +1,36 @@
+.function {
+    display: flex;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border-bottom: 1px solid #ececec;
+  
+  .item + .item {
+    margin-left: 30px;
+  }
+   div {
+    margin-bottom: 30px;
+    background-color: $second-background;
+  
+    border-radius: 4px;
+  }
+  
+   h3 {
+    margin: 0 0 10px;
+    color: $title-text-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+   p {
+    margin: 0;
+    color: $primary-text-color;
+    line-height: 1.71;
+  }
+}
+.img-function {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+}

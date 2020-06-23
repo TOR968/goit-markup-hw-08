@@ -1,0 +1,37 @@
+.client {
+    display: flex;
+    justify-content: center;
+    .item + .item {
+        margin-left: 30px;
+      }
+  }
+  .img-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: var(--svg4);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms $animation,
+    color 250ms $animation; 
+        &:hover,
+        &:focus{
+    border: 1px solid $accent-color;
+    color: $accent-color; 
+  }
+  }
+  .company {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+        h2 {
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+  }

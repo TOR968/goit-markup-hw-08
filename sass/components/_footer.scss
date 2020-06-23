@@ -1,0 +1,107 @@
+footer {
+    color: $primary-white-color;
+    background-color: $footer-background;
+    a {
+        color: $primary-white-color;
+      }
+    b {
+        display: inline-block;
+        padding-bottom: 21px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+  }}
+  .logo-adress {
+    padding: 60px 69px 60px 0;
+    &-main {
+        display: flex;
+      }
+  }
+  .connect {
+    padding: 72px 0px 100px 0px;
+  }
+  .title-footer {
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.18;
+  }
+  .city,
+  .mail {
+    display: inline-block;
+    padding-bottom: 9px;
+  }
+  .web {
+    color: $accent-color;
+  }
+  address {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    a {
+        color: $adres-text-color;
+      }
+  }
+  .join {
+    display: flex;
+    .item-link {
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        & + .item-link {
+            margin-left: 10px;
+          }
+      }
+  }
+  .img-join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $animation;
+        &:hover,
+        &:focus {
+        background-color: $accent-color;
+      }
+}
+  .icon-join {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  .subscribe {
+    align-items: center;
+    margin-left: auto;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    input {
+        background-color: $footer-background;
+        color: rgba(255, 255, 255, 0.6);
+        padding: 18px 58px 18px 12px;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+      }
+  }
+  .sub-input {
+    display: flex;
+    align-items: center;
+    input::placeholder{
+        font-size: 16px;
+        line-height: 1.88;
+        color: rgba(255, 255, 255, 0.6);
+      
+      }
+  }

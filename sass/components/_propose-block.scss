@@ -1,0 +1,41 @@
+.propose {
+    display: flex;
+  
+   .item + .item {
+    margin-left: 30px;
+  }
+   a{
+    position: relative;
+  }
+   img,
+   a {
+    display: block;
+  }
+  &-main {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  
+    h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+    h3 {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 27px;
+    color: $primary-white-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0px 0px 4px 4px;
+  }}
+}

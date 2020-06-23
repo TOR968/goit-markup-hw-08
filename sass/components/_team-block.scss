@@ -1,0 +1,80 @@
+.us {
+    display: flex;
+    .item {
+    width: 270px;
+    overflow: hidden;
+    background-color: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+        & + .item {
+        margin-left: 30px;
+      }}
+    .social {
+        padding-bottom: 24px;
+      }
+  }
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: $second-background;
+  
+   img{
+    display: block;
+  }
+   h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+   h3 {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+   p {
+    margin: 0;
+    padding-bottom: 16px;
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }}
+  .social {
+    display: flex;
+    justify-content: center;
+    .item-link + .item-link {
+        margin-left: 10px;
+      }
+  }
+  
+  .img-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--svg4);
+    border-radius: 50%;
+    transition: background-color 250ms $animation,
+    color 250ms $animation;
+        &:hover,
+        &:focus{
+      background-color: $accent-color;
+      color: $primary-white-color;
+    }
+}
+
+  .icon-social{
+    width: 20px;
+    height: 20px;
+  }
