@@ -1,18 +1,22 @@
 .function {
     @media screen and (min-width: 480px) {
-      padding-top: 30px;
+      padding-top: 60px;
       padding-bottom: 60px;
-      .item{ width: 450px;}
+      .item{ 
+        width: 450px;
+        & + .item{
+          margin-top: 30px;
+      }
+    }
     }
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      padding-top: 60px;
-      padding-bottom: 60px;
        .item{
         width: 354px;
         &+.item {
+          margin-top: 0;
           margin-left: 30px;
         }
       &:nth-child(2n+1) {
@@ -24,16 +28,13 @@
     @media screen and (min-width: 1200px) {
       .item {
         width: 270px;
-      &:nth-child(3) {
+      & + .item {
         margin-left: 30px;
       }
       &:nth-child(n + 3) {
         margin-top: 0;}
-      }
-       & + .item {
-        margin-left: 30px;
-      }
-      display: flex;
+      } 
+       
       align-items: center;
       padding-top: 94px;
       padding-bottom: 94px;

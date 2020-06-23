@@ -1,5 +1,8 @@
 .us {
-    // display: flex;
+    @media screen and (min-width: 768px){
+      display: flex;
+      flex-wrap: wrap;
+    }
     .item {
     width: 270px;
     overflow: hidden;
@@ -7,19 +10,56 @@
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-      //   & + .item {
-      //   margin-left: 30px;
-      // }
+      
+      @media screen and (min-width: 480px) {
+        width: 450px;
+        & + .item {
+        margin-top: 30px;
+      }
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 354px;
+         & + .item {
+          margin-top: 0;
+        }
+        &:nth-child(2n) {
+          margin-left: 30px;
+        }
+        &:nth-child(n + 3) {
+          margin-top: 30px;
+        } 
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        &:nth-child(n + 3) {
+          margin-top: 0;
+        } 
+        & + .item {
+        margin-left: 30px;
+      }
+    }
+      
     }
     .social {
         padding-bottom: 24px;
       }
   }
   .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: $second-background;
-  
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+      line-height: 1.18;
+      }
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+      }
    img{
     display: block;
   }
@@ -28,10 +68,19 @@
     margin-bottom: 50px;
     color: $title-text-color;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
-  }
+    @media screen and (min-width: 480px){
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+    @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+    }
+  
    h3 {
     margin: 0;
     padding-top: 30px;
