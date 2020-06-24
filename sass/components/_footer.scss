@@ -115,8 +115,11 @@ footer {
       padding-bottom: 94px;
   }
     input {
-      width: 450px;
+      width: 100%;
       margin-bottom: 20px;
+      @media screen and (min-width: 769px) {
+        width: 450px;
+      }
     @media screen and (min-width: 1200px) {
       width: 358px;
       margin-bottom: 0px;

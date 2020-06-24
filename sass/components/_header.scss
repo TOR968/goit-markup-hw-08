@@ -5,24 +5,21 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .site-nav {
+  display: none;
   & .item {
     position: relative;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;}
-  @media screen and (min-width: 1200px) {
-    text-align: unset;
-    display: flex;
-  & .item {
-    & + .item {
-      margin-left: 50px;}
-    }  
-    
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+      text-align: unset;
+      display: flex;
     & .item {
-    padding-top: 32px;
+      padding-top: 32px;
     padding-bottom: 32px;
-  }}
+      & + .item {
+        margin-left: 50px;}
+      }
   }
   & a {
       &:hover,
@@ -32,6 +29,7 @@ header {
 }
 }
 .adres-nav {
+  display: none;
   text-align: center;
   padding-bottom: 60px ;
   & .item{
@@ -40,9 +38,17 @@ header {
       margin-top: 16px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    display: unset;
     padding-bottom: 0;
     text-align: unset;
+    margin-left: auto;
+    & .item{
+      & + .item{
+        margin-top: 10px;
+      }
+  }}
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
   & .item{ 
@@ -73,12 +79,15 @@ header {
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.19;
+    @media screen and (min-width: 768px) {
+      margin-right: 81px;
+    }
     @media screen and (min-width: 1200px) {
-      margin-right: 86px;
+      margin-right: 85px;
     }
   }
   .main-nav {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }}
