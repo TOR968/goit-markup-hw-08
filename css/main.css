@@ -339,6 +339,102 @@ a {
   }
 }
 
+header {
+  background-color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.site-nav .item {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav a:hover, .site-nav a:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .adres-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+  .adres-nav .item + .item {
+    margin-left: 30px;
+  }
+}
+
+.adres-nav a {
+  color: #757575;
+}
+
+.adres-nav a:hover, .adres-nav a:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-adres-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.icon-adres-nav {
+  margin-right: 10px;
+}
+
+/*  */
+.title-nav {
+  margin-right: 86px;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+nav a {
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav span {
+  color: #2196f3;
+}
+
 .hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -354,14 +450,13 @@ a {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 1600px;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 768px;
   }
 }
 
@@ -369,7 +464,6 @@ a {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
   }
 }
 
@@ -833,6 +927,7 @@ textarea:not(:placeholder-shown) + .form-label-textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 480;
   }
 }
 

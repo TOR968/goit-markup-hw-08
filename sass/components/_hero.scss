@@ -15,18 +15,16 @@
     margin-right: auto;
       padding-top: 118px;
       padding-bottom: 118px;
-      max-width: 480px;
+      max-width: 1600px;
   
     @media screen and (min-width: 768px) {
       padding-top: 118px;
       padding-bottom: 118px;
-      max-width: 768px;
     }
   
     @media screen and (min-width: 1200px) {
       padding-top: 200px;
     padding-bottom: 200px;
-      max-width: 1600px;
     }
  
    & h1 {

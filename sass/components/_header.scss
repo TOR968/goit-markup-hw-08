@@ -5,8 +5,10 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .site-nav {
-    display: flex;
   
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    }  
   & .item {
     position: relative;
     padding-top: 32px;
@@ -22,12 +24,14 @@ header {
 }
 }
 .adres-nav {
+  @media screen and (min-width: 1200px) {
+
     display: flex;
     margin-left: auto;
   
   & .item + .item {
     margin-left: 30px;
-  }
+  }}
   & a {
     color: $primary-text-color;
     &:hover,
@@ -36,10 +40,12 @@ header {
 
   }}}
   .img-adres-nav{
+    
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  }}
   .icon-adres-nav{
     margin-right: 10px;
   }
@@ -51,9 +57,10 @@ header {
     line-height: 1.19;
   }
   .main-nav {
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-  }
+  }}
   nav{ 
      & a {
     color: $title-text-color;
