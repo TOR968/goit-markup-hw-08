@@ -30,9 +30,7 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    @media screen and (min-width: 480px) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
     @media screen and (min-width: 1200px) {
     margin-left: 12px;}
   }

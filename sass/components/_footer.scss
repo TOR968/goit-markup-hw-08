@@ -12,11 +12,9 @@ footer {
 
   }}
   .logo-adress {
-    @media screen and (min-width: 480px) {
       padding-top: 60px ;
       padding-bottom: 60px;
       text-align: center;
-      }
       @media screen and (min-width: 768px) {
         padding-left: 76px;
       }
@@ -34,10 +32,8 @@ footer {
       }
   }}
   .connect {
-    @media screen and (min-width: 480px) {
       padding-bottom: 60px;
       text-align: center;
-      }
       @media screen and (min-width: 768px) {
         padding-top: 65px;
         padding-right: 89px;
@@ -75,11 +71,9 @@ footer {
       }
   }
   .join {
-    @media screen and (min-width: 480px) {
       display: flex;
       align-items: center;
       justify-content: center;
-    }
        .item-link {
         display: inline-block;
         width: 44px;
@@ -107,14 +101,10 @@ footer {
     width: 20px;
     height: 20px;
   }
-  
-
   .subscribe {
     align-items: center;
-    @media screen and (min-width: 480px) {
         text-align: center;
         padding-bottom: 60px;
-      }
     @media screen and (min-width: 768px) {
         margin-left: 166px;
       }
@@ -125,11 +115,8 @@ footer {
       padding-bottom: 94px;
   }
     input {
-      
-    @media screen and (min-width: 480px) {
       width: 450px;
       margin-bottom: 20px;
-    }
     @media screen and (min-width: 1200px) {
       width: 358px;
       margin-bottom: 0px;

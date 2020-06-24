@@ -4,18 +4,17 @@
       flex-wrap: wrap;
     }
     .item {
-    width: 270px;
+    width: 450px;
     overflow: hidden;
     background-color: $primary-white-color;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-      
-      @media screen and (min-width: 480px) {
-        width: 450px;
-        & + .item {
-        margin-top: 30px;
-      }
+    & + .item {
+      margin-top: 30px;
+    }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
       }
     
       @media screen and (min-width: 768px) {
@@ -48,10 +47,8 @@
   }
   .team {
     background-color: $second-background;
-    @media screen and (min-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
-      }
     @media screen and (min-width: 768px) {
       font-size: 28px;
       line-height: 1.18;
@@ -65,15 +62,12 @@
   }
    h2 {
     margin-top: 0;
-    margin-bottom: 50px;
     color: $title-text-color;
     font-weight: bold;
     text-align: center;
-    @media screen and (min-width: 480px){
       margin-bottom: 30px;
       font-size: 28px;
       line-height: 1.18;
-    }
     @media screen and (min-width: 1200px){
       margin-bottom: 50px;
       font-size: 36px;

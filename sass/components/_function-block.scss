@@ -1,5 +1,4 @@
 .function {
-    @media screen and (min-width: 480px) {
       padding-top: 60px;
       padding-bottom: 60px;
       .item{ 
@@ -7,7 +6,6 @@
         & + .item{
           margin-top: 30px;
       }
-    }
     }
     @media screen and (min-width: 768px) {
       display: flex;
