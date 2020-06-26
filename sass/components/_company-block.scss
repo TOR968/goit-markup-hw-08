@@ -32,16 +32,13 @@
           margin-top: 30px;
         }}
       @media screen and (min-width:1200px){
-        &:nth-child(3n),
-        &:nth-child(3n-1) {
-          margin-left: 0px;
-        }
+        .item{
         &:nth-child(n + 4) {
           margin-top: 0px;
         }
         & + .item {
           margin-left: 30px;
-        }
+        }}
       }
          }
     }

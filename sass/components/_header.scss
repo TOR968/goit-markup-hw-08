@@ -5,16 +5,19 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .site-nav {
-  display: none;
   & .item {
-    position: relative;
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px;}
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.17;
+  }
     @media screen and (min-width: 768px) {
-      text-align: unset;
       display: flex;
     & .item {
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: unset;
       padding-top: 32px;
     padding-bottom: 32px;
       & + .item {
@@ -22,6 +25,7 @@ header {
       }
   }
   & a {
+    position: relative;
       &:hover,
       &:focus{
         color: $accent-color;
@@ -29,9 +33,10 @@ header {
 }
 }
 .adres-nav {
-  display: none;
   text-align: center;
   padding-bottom: 60px ;
+  font-size: 18px;
+  line-height: 1.17;
   & .item{
     & + .item{
       display: inline-block;
@@ -39,7 +44,8 @@ header {
     }
   }
   @media screen and (min-width: 768px) {
-    display: unset;
+    font-size: 14px;
+    line-height: 1.14;
     padding-bottom: 0;
     text-align: unset;
     margin-left: auto;
@@ -74,23 +80,29 @@ header {
   }
 /*  */
 .title-nav {
-    display: inline-block;
-    margin: 16px 15px ;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 15px;
     font-family: Raleway;
+    font-size: 24px;
+    line-height: 1.17;
+        
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 81px;
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
-    @media screen and (min-width: 768px) {
-      margin-right: 81px;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-right: 85px;
-    }
+    margin-right: 85px;
+  }
   }
   .main-nav {
-    @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
-  }}
+    justify-content: space-between;
+    position: relative;
+  }
   nav{ 
      & a {
     color: $title-text-color;

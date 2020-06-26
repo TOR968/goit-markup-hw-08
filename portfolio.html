@@ -16,19 +16,36 @@
       <nav class="container main-nav">
         <a class="title-nav" href="./index.html"> <span>Web</span> Studio </a>
 
+        <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg
+          width="40"
+          height="40"
+          aria-label="Переключатель мобильного меню"
+        >
+          <use class="icon-cross" href="./images/sprite.svg#close40px"></use>
+          <use class="icon-menu" href="./images/sprite.svg#menu40px"></use>
+        </svg>
+      </button>
+      <div class="menu-container" id="menu-container" data-menu>
         <ul class="site-nav list">
           <li class="item">
             <a href="./index.html">Студия</a>
           </li>
           <li class="item">
-            <a class="current" href="./portfolio.html">Портфолио</a>
-          </li>
+            <a class="current" href="./portfolio.html">Портфолио</a></li>
           <li class="item"><a href="">Контакты</a></li>
         </ul>
+
         <ul class="adres-nav list">
           <li class="item">
             <a class="img-adres-nav" href="mailto:info@devstudio.com">
-              <svg class="icon-adres-nav" width="16" height="16">
+              <svg class="icon-adres-nav" width="16" height="16" >
                 <use xlink:href="./images/sprite.svg#envelope" />
               </svg>
               info@devstudio.com
@@ -43,6 +60,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </nav>
     </header>
     <main>
@@ -314,5 +332,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

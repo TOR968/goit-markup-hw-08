@@ -1,14 +1,14 @@
-( ( )  =>  {
-    const  menuBtnRef  =  документ . querySelector ( "[кнопка меню-дані]" ) ;
-    const  mobileMenuRef  =  документ . querySelector ( "[меню даних]" ) ;
-  
-    менюBtnRef . addEventListener ( "натиснути" ,  ( )  =>  {
-      const  розширений  =
-        менюBtnRef . getAttribute ( "розширений арією" )  ===  "true"  ||  помилковий ;
-  
-      менюBtnRef . classList . toggle ( "є-відкрито" ) ;
-      менюBtnRef . SetAttribute ( "арія спінені" , ! Розширено ) ;
-  
-      mobileMenuRef . classList . toggle ( "є-відкрито" ) ;
-    } ) ;
-  } ) ( ) ;
+(() => {
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const mobileMenuRef = document.querySelector("[data-menu]");
+
+  menuBtnRef.addEventListener("click", () => {
+    const expanded =
+      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+    menuBtnRef.classList.toggle("is-open");
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+    mobileMenuRef.classList.toggle("is-open");
+  });
+})();
