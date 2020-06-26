@@ -145,11 +145,18 @@ textarea:not(:placeholder-shown) + .form-label-textarea{
       line-height: 1.14;
     }
     letter-spacing: 0.03em;
+    // display: inline-block;
+    // padding: 0;
+    // margin: 2px;
+    // flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
     a{
         display: inline-block;
+        
+    // padding: 0;
+    // margin: 2px;
         color: $accent-color;
         text-decoration: underline;
       }

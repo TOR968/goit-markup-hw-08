@@ -1615,11 +1615,15 @@ address a {
 
 @media screen and (max-width: 767px) {
   .menu {
+    margin-left: -7px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .menu .item + .item {
     padding-bottom: 15px;
+  }
+  .menu .item:nth-child(1) {
+    padding-left: 8px;
   }
   .menu .item:nth-last-child(1) {
     padding-bottom: 40px;
