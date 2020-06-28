@@ -241,14 +241,31 @@
         <h2>Наша команда</h2>
         <ul class="us list container">
           <li class="item">
-            <div>
+            <!-- <div>
               <img
                 src="./images/studio-img/john.jpg"
                 alt="Фото Ваня"
                 width="270"
                 height="260"
               />
-            </div>
+            </div> -->
+            <picture>
+              <source
+                srcset="
+                ./images/studio-img/nik/nik.webp 450w,
+                ./images/studio-img/nik/nik@2x.webp 900w,
+                ./images/studio-img/nik/nik@3x.webp 1350w"
+                type="image/webp"
+              />
+              <img
+                srcset="
+                ./images/studio-img/nik/nik.jpg 450w,
+                ./images/studio-img/nik/nik@2x.jpg 900w,
+                ./images/studio-img/nik/nik@3x.jpg 1350w"
+                src="./images/studio-img/nik/nik.jpg"
+                alt="Фото Николай"
+              />
+            </picture>
             <h3>Николай Кучеренко</h3>
             <p>Product Designer</p>
             <ul class="social list">
