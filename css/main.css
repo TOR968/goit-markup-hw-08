@@ -1657,7 +1657,6 @@ address a {
 
 @media screen and (max-width: 767px) {
   .menu {
-    margin-left: -7px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
