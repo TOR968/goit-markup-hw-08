@@ -13,6 +13,12 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+          width: 350px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
     .item {
         display: block;
@@ -62,8 +68,6 @@
             transform: translateY(0);
             opacity: 1;}
         }
-    img {
-    display: block;}
     
 }
 .card-img{
@@ -98,7 +102,13 @@
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: $primary-white-color;
-    padding: 63px 24px;
+    padding: 2px;
+    @media screen and (min-width: 480px) {
+      padding: 77px 24px}
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px}
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px}
     margin: 0;
   }
   %front-background {

@@ -1734,6 +1734,15 @@ address a {
   letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project h3 {
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .project .item {
   display: block;
   width: 100%;
@@ -1795,10 +1804,6 @@ address a {
   opacity: 1;
 }
 
-.project img {
-  display: block;
-}
-
 .card-img {
   position: relative;
   border-top-left-radius: 5px;
@@ -1833,8 +1838,26 @@ address a {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 63px 24px;
+  padding: 2px;
   margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .card-img-text {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-img-text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-img-text {
+    padding: 63px 24px;
+  }
 }
 
 .card-img::before, .card-img-text {
